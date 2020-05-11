@@ -67,7 +67,6 @@ def _impl(repository_ctx):
     command = [docker_path, "build"]
     command.extend(build_args)
     command.extend([
-        "--no-cache",
         "-f",
         str(dockerfile_path),
         "-t",
